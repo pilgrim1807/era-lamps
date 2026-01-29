@@ -1,0 +1,423 @@
+/* === ОБЩИЕ СТИЛИ === */
+
+/* Глобальные сбросы */
+* {
+    color: #000;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Ссылки и базовые стили для a */
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+a:focus,
+a:hover {
+    color: #686868;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+
+a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+/* HTML5-элементы для старых браузеров */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/* Стили для элементов с классом label */
+a.label:focus,
+a.label:hover {
+    color: #272727;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #636b6f;
+    background-color: #fff;
+    margin: 0;
+}
+
+
+/* кнопки */
+.btn-default-catalog {
+    color: #000;
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 0;
+    width: 278px;
+}
+
+/* Общие стили форм и элементов */
+button,
+input,
+select,
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Базовый вид кнопок */
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 4px;
+    margin: 5px 20px;
+}
+
+.btn:focus,
+.btn:hover,
+.btn.focus {
+    color: #636b6f;
+    text-decoration: none;
+}
+
+.btn.active,
+.btn:active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* Базовый вид кнопок */
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #000;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: -2px;
+}
+
+.btn:focus,
+.btn:hover,
+.btn.focus {
+    color: #636b6f;
+    text-decoration: none;
+}
+
+.btn.active,
+.btn:active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(77, 74, 74, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/* Контейнеры */
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.container:before,
+.container:after {
+    content: " ";
+    display: table;
+}
+
+.container:after {
+    clear: both;
+}
+
+/* Формы и общие отступы */
+
+/* Fieldset и legend */
+fieldset {
+    margin: 0;
+    min-width: 0;
+  }
+  
+  fieldset,
+  legend {
+    padding: 0;
+    border: 0;
+  }
+
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+h2,
+h3 {
+  orphans: 3;
+  widows: 3;
+}
+
+h2,
+h3 {
+  page-break-after: avoid;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 0.1;
+  color: inherit;
+}
+
+h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1,
+h1 {
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.h2,
+h2 {
+  font-size: 30px;
+  margin-top: 2px;
+  margin-bottom: 13px;
+}
+
+.h3,
+h3 {
+  font-size: 24px;
+  margin-top: 22px;
+  margin-bottom: 11px;
+}
+
+.h4,
+h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.h5,
+h5 {
+  font-size: 14px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.h6,
+h6 {
+  font-size: 12px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+}
+
+.hyphens {
+  hyphens: auto;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: 0.2px;
+  word-spacing: 0.15em;
+  line-height: 1.4;
+  padding: 0 5px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+/* Стили для иконок Общие стили для иконок и изображений */
+.icon {
+    text-transform: none !important;
+  }
+  
+  .img {
+    width: 100px;
+  }
+  
+  img {
+    border: 0;
+  
+  }
+  
+  li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
+  }
+
+  /* Утилитарные классы */
+
+input[type="search"] {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+  
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  /* Основные утилиты навигации */
+.nav {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+  
+  .nav:before,
+  .nav:after {
+    content: " ";
+    display: table;
+  }
+  
+  .nav:after {
+    clear: both;
+  }
+  
+  .nav>li,
+  .nav>li>a {
+    position: relative;
+    display: block;
+  }
+  
+  .nav>li>a {
+    padding: 10px 15px;
+  }
+  
+  .nav>li>a:focus,
+  .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #eee;
+  }
+  
+  .nav>li.disabled>a {
+    color: #777;
+  }
+  
+  .nav>li>a>img {
+    max-width: none;
+  }
+
+  /* Общие отступы для упорядоченных и неупорядоченных списков */
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin-bottom: 0;
+}
+
+/* Типографика */
+small,
+.small {
+  font-size: 12px;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  top: -6px;
+}
+
+/* Работа с SVG */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* U */
+
+ul {
+    margin: 0;
+  }
+  
+  ul li {
+    list-style: none;
+  }

@@ -1,0 +1,50 @@
+/*шрифты динпро */
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Regular.woff2') format('woff2'),
+       url('../fonts/DINPro-Regular.woff') format('woff'),
+       url('../fonts/DINPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Medium.woff') format('woff'),
+       url('../fonts/DINPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-MediumItalic.woff') format('woff'),
+       url('../fonts/DINPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('../fonts/DINPro-Bold.woff') format('woff'),
+       url('../fonts/DINPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* icons */
+
+@font-face {
+  font-family: 'Era_icon';
+  src: url('../fonts/Era_icon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Era_icon_2';
+  src: url('../fonts/Era_icon_2.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
