@@ -1,3 +1,3 @@
-git status
-git add [files] - добавляет файлы  stage
-git commit
+1. git status
+2. git add [files] - добавляет файлы  stage
+3. git commit
